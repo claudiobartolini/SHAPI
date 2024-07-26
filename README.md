@@ -73,7 +73,7 @@ shap_saas/
 - **Method:** `POST`
 - **Description:** Uses Tree SHAP algorithms to explain the output of ensemble tree models.
 - **Request Body:**
-  ```json
+  ```
   {
     "model": "YourModelObject",
     "data": [ ... ]
