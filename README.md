@@ -37,30 +37,34 @@ shap_saas/
 ## Installation
 
 1. Clone the repository:
-   ```bash
+   ```
+   bash
    git clone https://github.com/yourusername/shap_saas.git
    cd shap_saas
    ```
 
-2. Create a virtual environment and activate it:
-   ```bash
+3. Create a virtual environment and activate it:
+   ```
+   bash
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
-3. Install the required packages:
-   ```bash
+5. Install the required packages:
+   ```
+   bash
    pip install -r requirements.txt
    ```
 
 ## Usage
 
 1. Run the Flask application:
-   ```bash
+   ```
+   bash
    python app.py
    ```
 
-2. The API will be available at `http://127.0.0.1:5000`.
+3. The API will be available at `http://127.0.0.1:5000`.
 
 ## Endpoints
 
