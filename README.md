@@ -10,6 +10,7 @@ A cloud-based SaaS package providing SHAP (SHapley Additive exPlanations) functi
 
 ## Directory Structure
 
+```
 shap_saas/
 ├── app.py
 ├── requirements.txt
@@ -31,6 +32,7 @@ shap_saas/
     ├── __init__.py
     ├── test_explainers.py
     └── test_plots.py
+```
 
 ## Installation
 
