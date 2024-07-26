@@ -98,7 +98,7 @@ shap_saas/
   }
   ```
 - **Response:**
-  ```json
+  ```
   {
     "explainer_id": "1"
   }
