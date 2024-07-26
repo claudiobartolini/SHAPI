@@ -37,11 +37,11 @@ shap_saas/
 ## Installation
 
 1. Clone the repository:
-   ```
-   bash
-   git clone https://github.com/yourusername/shap_saas.git
-   cd shap_saas
-   ```
+```
+bash
+git clone https://github.com/yourusername/shap_saas.git
+cd shap_saas
+```
 
 3. Create a virtual environment and activate it:
    ```
