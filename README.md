@@ -80,7 +80,7 @@ shap_saas/
   }
   ```
 - **Response:**
-  ```json
+  ```
   {
     "explainer_id": "1"
   }
@@ -91,7 +91,7 @@ shap_saas/
 - **Method:** `POST`
 - **Description:** Computes SHAP values for a linear model.
 - **Request Body:**
-  ```json
+  ```
   {
     "model": "YourModelObject",
     "masker": { ... }
@@ -109,14 +109,14 @@ shap_saas/
 - **Method:** `POST`
 - **Description:** Computes SHAP values using the Kernel SHAP method.
 - **Request Body:**
-  ```json
+  ```
   {
     "model": "YourModelObject",
     "data": [ ... ]
   }
   ```
 - **Response:**
-  ```json
+  ```
   {
     "explainer_id": "1"
   }
@@ -127,13 +127,13 @@ shap_saas/
 - **Method:** `POST`
 - **Description:** Computes SHAP values for the given data using the specified explainer.
 - **Request Body:**
-  ```json
+  ```
   {
     "data": [ ... ]
   }
   ```
 - **Response:**
-  ```json
+  ```
   {
     "shap_values": [ ... ]
   }
@@ -144,7 +144,7 @@ shap_saas/
 - **Method:** `POST`
 - **Description:** Create a bar plot of a set of SHAP values.
 - **Request Body:**
-  ```json
+  ```
   {
     "shap_values": [ ... ],
     "max_display": 10
@@ -157,7 +157,7 @@ shap_saas/
 - **Method:** `POST`
 - **Description:** Create a summary plot of a set of SHAP values.
 - **Request Body:**
-  ```json
+  ```
   {
     "shap_values": [ ... ],
     "plot_type": "dot"
@@ -170,7 +170,7 @@ shap_saas/
 - **Method:** `POST`
 - **Description:** Create a dependence plot for a specific feature.
 - **Request Body:**
-  ```json
+  ```
   {
     "shap_values": [ ... ],
     "feature": "feature_name"
@@ -181,7 +181,8 @@ shap_saas/
 ## Testing
 
 1. Run the tests:
-   ```bash
+   ```
+   bash
    pytest
    ```
 
