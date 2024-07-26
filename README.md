@@ -43,28 +43,28 @@ git clone https://github.com/yourusername/shap_saas.git
 cd shap_saas
 ```
 
-3. Create a virtual environment and activate it:
-   ```
-   bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
+2. Create a virtual environment and activate it:
+```
+bash
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
 
-5. Install the required packages:
-   ```
-   bash
-   pip install -r requirements.txt
-   ```
+3. Install the required packages:
+```
+bash
+pip install -r requirements.txt
+```
 
 ## Usage
 
 1. Run the Flask application:
-   ```
-   bash
-   python app.py
-   ```
+```
+bash
+python app.py
+```
 
-3. The API will be available at `http://127.0.0.1:5000`.
+2. The API will be available at `http://127.0.0.1:5000`.
 
 ## Endpoints
 
@@ -73,83 +73,83 @@ cd shap_saas
 - **Method:** `POST`
 - **Description:** Uses Tree SHAP algorithms to explain the output of ensemble tree models.
 - **Request Body:**
-  ```
-  {
-    "model": "YourModelObject",
-    "data": [ ... ]
-  }
-  ```
+```
+{
+   "model": "YourModelObject",
+   "data": [ ... ]
+}
+```
 - **Response:**
-  ```
-  {
-    "explainer_id": "1"
-  }
-  ```
+```
+{
+   "explainer_id": "1"
+}
+```
 
 ### Create Linear Explainer
 - **URL:** `/explainers/linear`
 - **Method:** `POST`
 - **Description:** Computes SHAP values for a linear model.
 - **Request Body:**
-  ```
-  {
-    "model": "YourModelObject",
-    "masker": { ... }
-  }
-  ```
+```
+{
+   "model": "YourModelObject",
+   "masker": { ... }
+}
+```
 - **Response:**
-  ```
-  {
-    "explainer_id": "1"
-  }
-  ```
+```
+{
+   "explainer_id": "1"
+}
+```
 
 ### Create Kernel Explainer
 - **URL:** `/explainers/kernel`
 - **Method:** `POST`
 - **Description:** Computes SHAP values using the Kernel SHAP method.
 - **Request Body:**
-  ```
-  {
-    "model": "YourModelObject",
-    "data": [ ... ]
-  }
-  ```
+```
+{
+   "model": "YourModelObject",
+   "data": [ ... ]
+}
+```
 - **Response:**
-  ```
-  {
-    "explainer_id": "1"
-  }
-  ```
+```
+{
+   "explainer_id": "1"
+}
+```
 
 ### Compute SHAP Values
 - **URL:** `/explainers/{explainer_id}/shap_values`
 - **Method:** `POST`
 - **Description:** Computes SHAP values for the given data using the specified explainer.
 - **Request Body:**
-  ```
-  {
-    "data": [ ... ]
-  }
-  ```
+```
+{
+   "data": [ ... ]
+}
+```
 - **Response:**
-  ```
-  {
-    "shap_values": [ ... ]
-  }
-  ```
+```
+{
+   "shap_values": [ ... ]
+}
+```
 
 ### Create Bar Plot
 - **URL:** `/plots/bar`
 - **Method:** `POST`
 - **Description:** Create a bar plot of a set of SHAP values.
 - **Request Body:**
-  ```
-  {
-    "shap_values": [ ... ],
-    "max_display": 10
-  }
-  ```
+```
+{
+   "shap_values": [ ... ],
+   "max_display": 10
+}
+```
 - **Response:** Returns an image of the bar plot.
 
 ### Create Summary Plot
@@ -157,12 +157,12 @@ cd shap_saas
 - **Method:** `POST`
 - **Description:** Create a summary plot of a set of SHAP values.
 - **Request Body:**
-  ```
-  {
-    "shap_values": [ ... ],
-    "plot_type": "dot"
-  }
-  ```
+```
+{
+   "shap_values": [ ... ],
+   "plot_type": "dot"
+}
+```
 - **Response:** Returns an image of the summary plot.
 
 ### Create Dependence Plot
@@ -170,21 +170,21 @@ cd shap_saas
 - **Method:** `POST`
 - **Description:** Create a dependence plot for a specific feature.
 - **Request Body:**
-  ```
-  {
-    "shap_values": [ ... ],
-    "feature": "feature_name"
-  }
-  ```
+```
+{
+   "shap_values": [ ... ],
+   "feature": "feature_name"
+}
+```
 - **Response:** Returns an image of the dependence plot.
 
 ## Testing
 
 1. Run the tests:
-   ```
-   bash
-   pytest
-   ```
+```
+bash
+pytest
+```
 
 ## License
 
