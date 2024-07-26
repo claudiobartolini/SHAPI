@@ -1,4 +1,3 @@
-```markdown
 # SHAPI: A SHAP SaaS API
 
 A cloud-based SaaS package providing SHAP (SHapley Additive exPlanations) functionalities via REST APIs. This project implements endpoints to create explainers for various models and generate plots for SHAP values.
